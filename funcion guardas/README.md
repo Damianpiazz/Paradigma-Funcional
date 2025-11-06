@@ -16,6 +16,21 @@ Las guardas se evalúan de arriba hacia abajo, en el orden en que están escrita
 
 ---
 
+## Ejemplo de Función con Guardas
+
+```haskell
+-- Función que clasifica un número según su valor
+clasificarNumero :: Int -> String
+clasificarNumero n
+  | n < 0     = "Negativo"
+  | n == 0    = "Cero"
+  | n < 10    = "Positivo pequeño"
+  | n <= 100  = "Positivo mediano"
+  | otherwise = "Positivo grande"
+```
+
+---
+
 ## Estructura de una Función con Guardas
 
 Una función con guardas está compuesta por:

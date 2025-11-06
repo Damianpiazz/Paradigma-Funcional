@@ -5,6 +5,19 @@ A diferencia de otros lenguajes, Haskell es un lenguaje **puramente funcional**,
 
 ---
 
+## Ejemplo de Uso de IO
+
+```haskell
+-- Ejemplo de interacción básica con el sistema IO
+main :: IO ()
+main = do
+    putStrLn "Ingrese su nombre:"        -- Salida estándar (muestra texto en consola)
+    nombre <- getLine                    -- Entrada estándar (lee texto del usuario)
+    putStrLn ("Hola, " ++ nombre ++ "!") -- Muestra un mensaje con el dato ingresado
+```
+
+---
+
 ## Conceptos Fundamentales
 
 - **Acciones IO**: En Haskell, una acción de IO representa una descripción de una operación de entrada o salida, pero no se ejecuta inmediatamente.  

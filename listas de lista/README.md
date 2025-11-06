@@ -27,6 +27,29 @@ Una lista de listas se denota como una lista cuyos elementos también son listas
 
 ---
 
+## Ejemplo en Código
+
+```haskell
+-- Ejemplo de Listas de Listas en Haskell
+-- Representación y operaciones básicas sobre estructuras matriciales
+
+main :: IO ()
+main = do
+    let matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]   -- Definición de una lista de listas
+    let primeraFila = head matriz                    -- Acceso a la primera sublista
+    let segundaColumna = map (!! 1) matriz           -- Obtiene la segunda columna
+    let sumaFilas = map sum matriz                   -- Suma los elementos de cada fila
+    let sumaTotal = sum (concat matriz)              -- Suma de todos los elementos de la matriz
+
+    putStrLn ("Matriz completa: " ++ show matriz)
+    putStrLn ("Primera fila: " ++ show primeraFila)
+    putStrLn ("Segunda columna: " ++ show segundaColumna)
+    putStrLn ("Suma por filas: " ++ show sumaFilas)
+    putStrLn ("Suma total: " ++ show sumaTotal)
+```
+
+---
+
 ## Aplicaciones
 
 - **Matrices y tablas de datos.**  

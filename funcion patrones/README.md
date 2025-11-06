@@ -25,6 +25,21 @@ Una función definida mediante patrones se compone de las siguientes partes:
 
 Esta estructura permite definir el comportamiento de una función de manera declarativa, evitando el uso explícito de condicionales o estructuras de control.
 
+```haskell
+-- 1. Firma de la función: define los tipos de los parámetros y el tipo de retorno
+descripcionDia :: Int -> String
+
+-- 2. Definición mediante patrones
+descripcionDia 1 = "Lunes"
+descripcionDia 2 = "Martes"
+descripcionDia 3 = "Miércoles"
+descripcionDia 4 = "Jueves"
+descripcionDia 5 = "Viernes"
+descripcionDia 6 = "Sábado"
+descripcionDia 7 = "Domingo"
+descripcionDia _ = "Número inválido"  -- Patrón comodín: cualquier otro valor
+```
+
 ---
 
 ## Características Principales

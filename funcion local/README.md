@@ -16,6 +16,23 @@ El uso de funciones locales permite expresar soluciones complejas de forma más 
 
 ---
 
+## Ejemplo de Función Local
+
+```haskell
+-- Función principal que calcula el promedio de tres números
+promedioTres :: Float -> Float -> Float -> Float
+promedioTres a b c = dividirSuma total 3
+  where
+    -- Función local que suma los tres valores
+    total = a + b + c
+
+    -- Función local que divide un número por otro
+    dividirSuma :: Float -> Float -> Float
+    dividirSuma x y = x / y
+```
+
+---
+
 ## Características Principales
 
 - **Ámbito limitado**: solo pueden utilizarse dentro de la función que las contiene.  

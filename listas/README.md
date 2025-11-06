@@ -5,6 +5,24 @@ Permiten almacenar y manipular colecciones de elementos del mismo tipo, lo que l
 
 ---
 
+## Ejemplo de Uso de Listas
+
+```haskell
+-- Ejemplo básico de operaciones con listas en Haskell
+main :: IO ()
+main = do
+    let numeros = [1, 2, 3, 4, 5]           -- Definición de una lista
+    let cuadrados = map (^2) numeros         -- Mapea cada elemento al cuadrado
+    let pares = filter even numeros          -- Filtra solo los números pares
+    let sumaTotal = foldr (+) 0 numeros      -- Suma todos los elementos
+    putStrLn ("Lista original: " ++ show numeros)
+    putStrLn ("Cuadrados: " ++ show cuadrados)
+    putStrLn ("Números pares: " ++ show pares)
+    putStrLn ("Suma total: " ++ show sumaTotal)
+```
+
+---
+
 ## Características de las Listas
 
 - **Homogéneas:** todos los elementos de una lista deben ser del mismo tipo.  

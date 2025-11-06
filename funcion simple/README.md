@@ -15,6 +15,18 @@ Esto refuerza el principio de **transparencia referencial**, uno de los pilares 
 
 ---
 
+## Estructura de una Función Simple
+
+```haskell
+-- 1. Firma de tipo: define los tipos de entrada y salida
+suma :: Int -> Int -> Int
+
+-- 2. Definición o cuerpo: describe la operación
+suma x y = x + y
+```
+
+---
+
 ## Características Principales
 
 - **Simplicidad:** se definen mediante una única ecuación, sin necesidad de estructuras condicionales o recursivas.  

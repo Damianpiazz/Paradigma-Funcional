@@ -17,6 +17,18 @@ El diseño de una función recursiva implica dos componentes esenciales:
 
 ---
 
+## Estructura de una Función Recursiva
+
+```haskell
+-- 1. Firma de la función: define los tipos de entrada y salida
+factorial :: Int -> Int
+
+-- 2. Definición de la función con casos base y recursivo
+factorial 0 = 1              -- Caso base: condición de finalización
+factorial n = n * factorial (n - 1)  -- Caso recursivo: llamada a sí misma con una entrada menor
+```
+---
+
 ## Características Principales
 
 - **Descomposición de problemas**: permiten dividir un problema complejo en instancias más pequeñas del mismo problema.  
